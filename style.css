@@ -1,0 +1,1366 @@
+:root {
+    --text-color: #F0F2F0;
+    --background-color: #414345;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sansation', sans-serif;
+  color: var(--text-color);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+  max-width: 100%;
+  min-width: 380px;
+}
+
+/*SECTION NAVBAR*/
+.nav{
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 150px;
+  background-color: var(--background-color);
+  z-index: 9999;
+}
+
+.nav .left h2{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.nav a{
+  font-family: 'Sansation', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.nav .right i{
+  font-size: 0;
+}
+
+/*SECTION HERO*/
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  margin: 150px 0;
+  margin-bottom: 150px;
+  gap: 75px;
+}
+
+.photo img{
+  height: 550px;
+  border-radius: 50%;
+}
+
+.hero-section .text h2{
+  width: fit-content;
+  font-size: 75px;
+  font-weight: 600;
+  animation: bounce 2s ease ;
+}
+
+.hero-section .text p{
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.hero-section .text p span{
+  color: brown;
+}
+
+/*SECTION ABOUT*/
+.about-section .container{
+  display: flex;
+  padding: 150px 100px;
+  margin-bottom: 100px;
+  gap: 125px;
+  background-color: floralwhite;
+  color: var(--background-color);
+  width: 100%;
+  height: fit-content;
+}
+
+.about-section .container .interests{
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  row-gap: 50px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.about-section .container .interests h2{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.about-section .container .interests i{
+  margin-right: 30px;
+}
+
+.about-section .container .interests .top,.mid,.bottom{
+  box-sizing: border-box;
+  box-shadow: 0.3em 0.3em 1em var(--background-color);
+  color: #ffffff;
+  background-color: var(--background-color);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+
+.about-section .container .about{
+  display: flex;
+  row-gap: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 6;
+}
+
+.about-section .container .about h2{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.about-section .container .about p{ 
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.about-section .container .about p span{ 
+  color: #0f3339;
+  padding: 10px;
+  font-size: 35px;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about-section .container .about p span img{
+  display: none;
+  position: fixed;
+  bottom: 300px;
+  right: 500px;
+  border-radius: 15px;
+  height: 800px;
+  width: 600px;
+  box-shadow: 5px 5px 15px 5px#0f3339;
+}
+
+.about-section .container .about p span:hover img{ 
+  display: inline;
+}
+
+.about-section .skills{
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section .skills .items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 30px 10px;
+  height: fit-content;
+  border-left: #fff 2px solid;
+  border-right: #fff 2px solid;
+  width: 90%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.about-section .skills .items i{
+  margin-right: 20px;
+}
+
+.about-section .skills .items .item {
+  width: 250px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(250px * 7), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(30s / 7 * (7 - 1) * -1);
+  color: orangered;
+}
+
+.item2 {
+  animation-delay: calc(30s / 7 * (7 - 2) * -1);
+  color: cornflowerblue;
+}
+
+.item3 {
+  animation-delay: calc(30s / 7 * (7 - 3) * -1);
+  color: darkgoldenrod;
+}
+
+.item4 {
+  animation-delay: calc(30s / 7 * (6.88 - 4) * -1);
+  color: cadetblue;
+}
+
+.item5 {
+  animation-delay: calc(30s / 7 * (7 - 5) * -1);
+  color: darkred;
+}
+
+.item6 {
+  animation-delay: calc(30s / 7 * (7 - 6) * -1);
+  color: deepskyblue;
+}
+
+.item7 {
+  animation-delay: calc(30s / 7 * (7 - 7) * -1);
+  color: rebeccapurple;
+}
+
+/*SECTION PROJECTS*/
+.projects{
+  width: 100%;  
+  padding: 0px 50px;
+  
+}
+.projects-section{
+  padding: 25px 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsla(0, 0%, 0%, 0.15);
+  border-radius: 15px;
+  row-gap: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 2px #ffffff3b;
+}
+
+.projects-section h1{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.projects-section .text{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.projects-section .text span {
+  animation: glow2 1s ease-in-out infinite alternate;
+}
+
+.projects-section .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.projects-section .container .p-left,.p-center,.p-right{
+  background-color: rgba(0, 0, 0, 0.100);
+  box-shadow: 0px 0px 2px #fff;
+  width: calc(100%/3);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  border: 1px solid #ffffff4a;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.projects-section .container .p-left h2{
+  background-color: rgba(255, 0, 0, 0.1);
+  color: rgba(255, 0, 0, 0.5);
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  align-content: center;
+  font-size: 40px;
+}
+
+.projects-section .container .p-center h2{
+  background-color: rgba(70, 0, 150, 0.1);
+  color: rgba(70, 0, 150, 0.5);
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  align-content: center;
+  font-size: 40px;
+}
+
+.projects-section .container .p-right h2{
+  background-color: rgba(0, 15, 255, 0.1);
+  color: rgba(0, 15, 255, 0.5);
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  align-content: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.projects-section .container p{
+  margin: 0px 25px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.projects-section .container .left-des,.center-des,.right-des{
+  width: 100%;
+  display: inline;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-section .container span{
+  background-color: rgba(0, 0, 0, 0.150);
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid #ffffff30;
+  border-radius: 5px;
+  margin: 0px 15px;
+  padding: 5px;
+}
+
+.projects-section .links{
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.projects-section .links p{
+  margin-top: 30px;
+}
+
+/*SECTION CONTACT*/
+.contact-section{
+  height: fit-content;
+  width: 100%;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.contact-section .container{
+  background-color: floralwhite;
+  color: #414345;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding: 50px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+.contact-section .container .box1{
+  border-right: 1px solid #414345;
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .container .box1 form{
+  width: 100%;
+}
+
+.contact-section .container .box1 .info{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.contact-section .container .box1 .info label,.textarea p{
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.contact-section .container .box1 .info input{
+  height: 50px;
+  width: 75%;
+  font-size: 40px;
+  border: 1px solid #414345;
+  border-radius: 5px;
+  background-color: #989898;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #F0F2F0;
+}
+
+.contact-section .container .box1 .info input::placeholder{
+  color:#F0F2F0;
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+.contact-section .container .box1 .textarea{ 
+  width: 100%;
+  margin-right: 25px;
+}
+
+.contact-section .container .box1 .textarea textarea{ 
+  resize: none;
+  background-color: #989898;
+  color: #F0F2F0;
+  border: 1px solid #414345;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 5px;
+  letter-spacing: 1px;
+  width: 95%;
+  height: 300px;
+}
+
+.contact-section .container .box1 .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 25px; 
+}
+
+.contact-section .container .box1 button{ 
+  background-color: #414345;
+  color: #F0F2F0;
+  border-radius: 5px;
+  padding: 15px 25px; 
+  font-size: 25px;
+  width: 25%;
+  cursor: pointer;
+}
+
+.contact-section .container .box2{
+  flex: 5;
+  padding: 25px;
+}
+
+.contact-section .container .box2 .text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.contact-section .container .box2 .text h1{
+  font-size: 55px;
+  font-weight: 600;
+  transform: translateY(-50px);
+}
+
+.contact-section .container .box2 .text h2{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-section .container .box2 .text p{
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact-section .container .box2 .text .info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  row-gap: 20px;
+}
+
+.contact-section .container .box2 .text .phone,.box2 .text .email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .container .box2 .text  i,.container .box2 .text a{  
+  margin-right: 15px;
+}
+
+.contact-section .container .box2 .text .links{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  column-gap: 50px;
+}
+
+.contact-section .container .box2 .text .links a{
+  text-decoration: none;
+  color: #414345;
+  transition: .5s ease-in-out;
+}
+
+.contact-section .container .box2 .text .links #ig:hover{
+  color: rebeccapurple;
+}
+
+.contact-section .container .box2 .text .links #in:hover{
+  color: skyblue;
+}
+
+.contact-section .container .box2 .text .links #fb:hover{
+  color: blue;
+}
+
+@media (max-width:2600px) {
+  /*SECTION PROJECTS*/
+  .projects-section .container p{
+    font-size: 17px;
+  }
+}
+
+@media (max-width:2100px) {
+  /*SECTION CONTACT*/
+  .contact-section .container .box1 button{ 
+    padding: 15px 15px; 
+    font-size: 22px;
+  }
+}
+
+@media (max-width:1950px) {
+  /*SECTION CONTACT*/
+  .contact-section .container .box1 .info label,.box1 .textarea p{
+    font-size: 35px;
+  }
+}
+
+@media (max-width:1850px) {
+  /*SECTION PROJECTS*/
+  .projects-section h1{
+    font-size: 50px;
+  }
+
+  .projects-section .text{
+    font-size: 30px;
+  }
+
+  .projects-section .container p{
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width:1750px) {
+  .contact-section .container .box1 .info label,.box1 .textarea p{
+    font-size: 30px;
+  }
+}
+
+@media (max-width:1650px) {
+  /*SECTION NAVBAR*/
+  .nav{
+    padding: 0 100px;
+  } 
+
+  .nav .left h2{
+    font-size: 40px;
+  }
+
+  .nav .right a{
+    margin: 0 10px;
+    font-size: 40px;
+  }
+
+ /*SECTION HERO*/
+  .photo img{
+  height: 500px;
+  }
+
+  .hero-section .text h2{
+    font-size: 65px;
+  }
+
+  .hero-section .text p{
+    font-size: 40px;
+  }
+
+  /*SECTION CONTACT*/
+  .contact-section .container .box2 .text p{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*SECTION CONTACT*/
+  .contact-section .container .box2 .text .links{
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 15px;
+  }
+
+  .contact-section .container .box1 button{ 
+    width: 35%;
+  }
+}
+
+@media (max-width:1500px) {
+    /*SECTION NAVBAR*/
+  .nav{
+    padding: 0 80px;
+  } 
+
+  .nav .left h2{
+    font-size: 30px;
+  }
+
+  .nav .right a{
+    font-size: 30px;
+  }
+  /*SECTION HERO*/
+  .photo img{
+  height: 400px;
+  }
+
+  .hero-section .text h2{
+    font-size: 60px;
+  }
+
+  .hero-section .text p{
+    font-size: 35px;
+  }
+
+    /*SECTION ABOUT*/
+  .about-section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 75px;
+    margin-bottom: 100px;
+    background-color: floralwhite;
+    color: var(--background-color);
+    width: 100%;
+    height: fit-content;
+  }
+
+  .about-section .container .interests{
+    width: fit-content;
+  }
+
+  .about-section .container .about p span img{
+    bottom: 300px;
+    right: 300px;
+  }
+
+  /*SECTION PROJECTS*/
+  .projects-section h1{
+    font-size: 45px;
+  }
+
+  .projects-section .text{
+    font-size: 25px;
+  }
+  .projects-section .container p{
+    font-size: 13px;
+  }
+
+  .projects-section .container .p-left h2{
+    font-size: 30px;
+  }
+
+  .projects-section .container .p-center h2{
+    font-size: 30px;
+  }
+
+  .projects-section .container .p-right h2{
+    font-size: 30px;
+  }
+
+  .projects-section .container span{
+    font-size: 15px;
+  }
+
+  /*SECTION CONTACT*/
+  .contact-section .container{
+    flex-direction: column-reverse;
+  }
+
+  .contact-section .container .box1{
+    width: 80%;
+    border: none;
+    border-top: 1px solid #414345;
+  }
+
+  .contact-section .container .box2 .text h1{
+    transform: none;
+  }
+
+  .contact-section .container .box2 .text .links{
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 15px;
+  }
+
+  .contact-section .container .box1 .info label,.box1 .textarea p{
+    font-size: 40px;
+  }
+
+  .contact-section .container .box1 button{ 
+    font-size: 30px;
+  }
+}
+
+@media (max-width:1300px) {
+  .projects-section .container span{
+    /*SECTION PROJETCS*/
+    font-size: 13px;
+    margin: 0px 9px;
+  }
+}
+
+@media (max-width:1150px) {
+    /*SECTION NAVBAR*/
+  .nav{
+    padding: 0 60px;
+  }
+  
+  /*SECTION ABOUT*/
+  .about-section .container .about h2{
+    font-size: 55px;
+  }
+
+  .about-section .container .about p{ 
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  /*SECTION PROJECTS*/
+  .projects-section h1{
+    font-size: 40px;
+  }
+
+  .projects-section .text{
+    font-size: 20px;
+  }
+  .projects-section .container p{
+    font-size: 11px;
+  }
+
+  .projects-section .container .p-left h2{
+    font-size: 25px;
+  }
+
+  .projects-section .container .p-center h2{
+    font-size: 25px;
+  }
+
+  .projects-section .container .p-right h2{
+    font-size: 25px;
+  }
+
+  .projects-section .container span{
+    font-size: 13px;
+  }
+}
+
+@media (max-width:1050px) {
+  /*SECTION NAVBAR*/
+  .nav{
+    padding: 0 50px;
+  } 
+
+  .nav .left h2{
+    font-size: 30px;
+  }
+
+  .nav .right span{
+    font-size: 30px;
+  }
+
+  /*SECTION HERO*/
+  .photo img{
+  height: 350px;
+  }
+
+  .hero-section .text h2{
+    font-size: 50px;
+  }
+
+  .hero-section .text p{
+    font-size: 25px;
+  }
+
+  /*SECTION ABOUT*/
+  .about-section .container .about h2{
+    font-size: 50px;
+  }
+
+  .about-section .container .about p{ 
+    font-size: 30px;
+  }
+
+  .about-section .container .about p span{ 
+    font-size: 30px;
+  }
+
+  .about-section .container .about p span img{
+    bottom: 150px;
+    right: 200px;
+    height: 700px;
+    width: 500px;
+  }
+
+  /*SECTION PROJECTS*/
+  .projects-section h1{
+    font-size: 38px;
+  }
+
+  .projects-section .text{
+    font-size: 18px;
+  }
+  .projects-section .container p{
+    font-size: 10px;
+  }
+
+  .projects-section .container .p-left h2{
+    font-size: 23px;
+  }
+
+  .projects-section .container .p-center h2{
+    font-size: 23px;
+  }
+
+  .projects-section .container .p-right h2{
+    font-size: 23px;
+  }
+
+  .projects-section .container span{
+    font-size: 12px;
+    margin: 0px;
+  }
+
+}
+
+@media (max-width:950px) {
+  /*SECTION NAVBAR*/
+  .nav{
+    padding: 0 40px;
+  } 
+  
+  /*SECTION ABOUT*/
+  .about-section .container .about p span img{
+    bottom: 200px;
+    right: 200px;
+  }
+  
+  /*SECTION PORJECTS*/
+  .projects-section .container span{
+    font-size: 10px;
+  }
+
+  /*SECTION CONTACT*/
+  .contact-section .container{
+    flex-direction: column-reverse;
+  }
+
+  .contact-section .container .box1{
+    width: 80%;
+    border: none;
+    border-top: 1px solid #414345;
+  }
+
+  .contact-section .container .box2 .text .links{
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .contact-section .container .box1 .info label,.box1 .textarea p{
+    font-size: 35px;
+  }
+
+  .contact-section .container .box1 .info input{
+    width: 90%;
+  }
+}
+
+@media (max-width:850px) {
+    /*SECTION NAVBAR*/
+  .nav .left h2{
+    font-size: 20px;
+  }
+
+  .nav .right span{
+    font-size: 20px;
+  }
+
+  /*SECTION HERO*/
+  .hero-section{
+    flex-direction: column;
+    padding: 10px 50px;
+    margin: 100px 0;
+    margin-bottom: 50px;
+  }
+
+  .photo img{
+  height: 300px;
+  }
+
+  .hero-section .text h2{
+    font-size: 50px;
+  }
+
+  .hero-section .text p{
+    margin-top: 15px;
+    font-size: 25px;
+  }
+
+  /*SECTION ABOUT*/
+  .about-section .container .about h2{
+    font-size: 45px;
+  }
+
+  .about-section .container .about p{ 
+    font-size: 25px;
+  }
+
+  .about-section .container .about p span{ 
+    font-size: 25px;
+  }
+
+  .about-section .container .about p span img{
+    bottom: 150px;
+    right: 100px;
+  }
+
+  .about-section .container .interests{
+    row-gap: 40px;
+    font-size: 35px;
+  }
+
+  .about-section .container .interests h2{
+    font-size: 50px;
+  }
+
+  /*SECTION PORJECTS*/
+  .projects-section{
+    padding: 20px 40px;
+  }
+
+  .projects-section .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .projects-section .container .p-left,.p-center,.p-right{
+    width:80%;
+  }
+
+  .projects-section .container p{
+    font-size: 17px;
+  }
+
+  .projects-section .container .p-left h2{
+    font-size: 27px;
+  }
+
+  .projects-section .container .p-center h2{
+    font-size: 27px;
+  }
+
+  .projects-section .container .p-center p{
+    font-size: 15px;
+  }
+
+  .projects-section .container .p-right h2{
+    font-size: 27px;
+  }
+
+  .projects-section .container span{
+    font-size: 17px;
+    margin: 0px 10px;
+  }
+
+  /*SECTION CONTACT*/
+  .contact-section .container .box1 .info label,.box1 .textarea p{
+    font-size: 28px;
+  }
+
+  .contact-section .container .box1 button{ 
+    width: 50%;
+  }
+
+}
+
+
+@media (max-width:720px) {
+  /*SECTION NAVBAR*/
+  .nav{
+    padding: 0 20px;
+  }
+
+  .nav .right i{
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .nav .right span{
+    font-size: 0px;
+  }
+
+  /*SECTION HERO*/
+  .hero-section .text h2{
+    font-size: 45px;
+  }
+
+  .hero-section .text p{
+    font-size: 20px;
+  }
+
+  /*SECTION ABOUT*/
+  .about-section .container .about p span img{
+    bottom: 150px;
+    right: 50px;
+  }
+
+  .about-section .container .interests{
+    row-gap: 30px;
+    font-size: 30px;
+  }
+
+  .about-section .container .interests h2{
+    font-size: 40px;
+  }
+
+  .about-section .container .about p span img{
+    bottom: 150px;
+    right: 200px;
+    height: 500px;
+    width: 300px;
+  }
+
+  /*SECTION PROJECT*/
+  .projects-section{
+    padding: 15px 30px;
+  }
+
+  /*SECTION CONTACT*/
+  .contact-section .container .box1 .info label{
+    font-size: 20px;
+  }
+
+  .contact-section .container .box1 .textarea p{
+    font-size: 18px;
+  }
+
+  .contact-section .container .box1 .info input{
+    font-size: 20px;
+  }
+
+  .contact-section .container .box1 .info input::placeholder{
+    font-size: 15px;
+  }
+
+  .contact-section .container .box1 .textarea textarea{ 
+    height: 200px;
+  }
+
+  .contact-section .container .box1 button{ 
+    font-size: 20px;
+    width: 75%;
+  }
+
+  .contact-section .container .box2 .text h1{
+    font-size: 35px;
+  }
+
+  .contact-section .container .box2 .text h2{
+    width: 80%;
+    font-size: 22px;
+  }
+
+  .contact-section .container .box2 .text p{
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .contact-section .container .box2 .text .info{
+    width: 80%;
+    font-size: 18px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width:650px) {
+  .projects-section{
+    padding: 13px 25px;
+  }
+
+  .projects-section .container .p-left,.p-center,.p-right{
+    width:100%;
+  }
+
+  .projects-section .container p{
+    font-size: 15px;
+  }
+
+  .projects-section .container .p-left h2{
+    font-size: 25px;
+  }
+
+  .projects-section .container .p-center h2{
+    font-size: 25px;
+  }
+
+  .projects-section .container .p-center p{
+    font-size: 13px;
+  }
+
+  .projects-section .container .p-right h2{
+    font-size: 25px;
+  }
+
+  .projects-section .container span{
+    font-size: 13px;
+  }
+
+  /*SECTION CONTACT*/
+  .contact-section .container{
+    padding: 25px;
+  }
+
+  .contact-section .container .box2 .links a{
+    font-size: 15px;
+  }
+}
+
+@media (max-width:550px) {
+  /*SECTION NAVBAR*/
+  .nav{
+    padding: 0 10px;
+  }
+
+  .nav .right i{
+    margin: 0;  
+  }
+
+  /*SECTION HERO*/
+  .hero-section{
+    margin: 80px 0;
+  }
+
+  .photo img{
+  height: 250px;
+  }
+
+  .hero-section .text h2{
+    font-size: 35px;
+  }
+
+  .hero-section .text p{
+    font-size: 20px;
+  }
+
+  /*SECTION ABOUT*/
+  .about-section .container{
+    padding: 100px 50px;
+  }
+
+  .about-section .container .about h2{
+    font-size: 35px;
+  }
+
+  .about-section .container .about p{ 
+    font-size: 20px;
+  }
+
+  .about-section .container .about p span{ 
+    font-size: 20px;
+  }
+
+  .about-section .container .about p span img{
+    bottom: 150px;
+    right: 50px;
+  }
+
+  .about-section .container .interests{
+    font-size: 25px;
+  }
+
+  .about-section .container .interests h2{
+    font-size: 35px;
+  }
+}
+
+@media (max-width:450px) {
+  /*SECTION NAVBAR*/
+  .nav .left h2{
+    font-size: 15px;
+  }
+
+  .nav .right i{
+    font-size: 15px;
+  }
+
+  /*SECTION HERO*/
+  .hero-section{
+    margin: 60px 0;
+  }
+
+  .photo img{
+  height: 200px;
+  }
+
+  .hero-section .text h2{
+    font-size: 30px;
+  }
+
+  .hero-section .text p{
+    font-size: 15px;
+  }
+
+  /*SECTION ABOUT*/
+  .about-section .container .about h2{
+    font-size: 30px;
+  }
+
+  .about-section .container .about p{ 
+    font-size: 17px;
+  }
+
+  .about-section .container .about p span{ 
+    font-size: 17px;
+  }
+
+  .about-section .container .about p span img{
+    bottom: 150px;
+    right: 100px;
+  }
+
+  .about-section .container .interests{
+    row-gap: 30px;
+    font-size: 20px;
+  }
+
+  .about-section .container .interests h2{
+    font-size: 30px;
+  }
+
+  .about-section .container .about p span img{
+    bottom: 100px;
+    right: 100px;
+    height: 450px;
+    width: 250px;
+  }
+
+  /*SECTION PROJECTS*/
+  .projects-section .container span{
+    margin: 0px;
+  }
+
+  .contact-section .container .box2 .info .phone i{
+    font-size: 15px;
+  }
+
+  .contact-section .container .box2 .info .email i{
+    font-size: 15px;
+  }
+
+  .contact-section .container .box2 .info p{
+    font-size: 15px;
+  }
+}
+
+@keyframes bounce{
+  0%{
+    transform: translateY(-1000px);
+  }
+  10%, 30%, 50%, 70%, 90%{
+    transform: translateY(0px);
+  }
+  20%{
+    transform: translateY(-80px);
+  }
+  40%{
+    transform: translateY(-50px);
+  }
+  60%{
+    transform: translateY(-30px);
+  }
+  80%{
+    transform: translateY(-15px);
+  }
+  95%{
+    transform: translateY(-5px);  
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -250px;
+  }
+}
+
+@keyframes  glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+    
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--background-color), 0 0 40px var(--background-color), 0 0 50px var(--background-color), 0 0 60px var(--background-color);
+  }
+}
+
+@keyframes  glow2 {
+  from {
+    text-shadow: 0 -5px 10px rgba(255, 170, 0, 0),0 -10px 20px rgba(255, 174, 0, 0),0 -15px 30px rgba(255, 115, 0, 0);
+  }
+    
+  to {
+    text-shadow: 0 -5px 10px rgba(255, 170, 0, 0.6),0 -10px 20px rgba(255, 174, 0, 0.5),0 -15px 30px rgba(255, 115, 0, 0.4);
+  }
+}

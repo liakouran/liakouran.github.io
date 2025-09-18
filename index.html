@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body id="home">
+    <nav class="nav">
+        <div class="left"><h2>Ilias Sarigiannidis</h2></div>
+        <div class="right">
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="#about">
+                <i class="fa-solid fa-info"></i>
+                <span>About</span>
+            </a>
+            <a href="#projects">
+                <i class="fa-solid fa-code"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#contact">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+    
+    <main>
+        <!--SECTION HERO-->
+        <section class="hero-section">
+            <div class="photo">
+                <img src="hlias.webp" alt="Ilias photo">
+            </div>
+            
+            <div class="text">
+                <h2>Hi, i am Ilias! 🇬🇷</h2>
+                <p>I am a student in the International Hellenic University (IHU) and i am spesializing in the IT and electronic systems engineering section. <span>Welcome to my portfolio!</span></p>
+            </div>
+        </section>
+
+        <!--SECTION ABOUT-->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about">
+                    <h2>About me</h2>
+                    <p>I’m Ilias Sarigiannidis, a 21-year-old amateur developer from Greece with a passion for turning ideas into digital experiences. I love coding, especially in the areas of web development, game development, and app development. Whether it’s building interactive websites, creating engaging games, or crafting useful applications, I enjoy exploring new technologies and pushing my skills further every day. At the moment the coding technologies i have tryied are these below. Also if you like you can check my resume <span id="resume_image">HERE! <img src="resume_image.jpg" ></img></span></p>
+                </div>
+
+                <div class="interests">
+                    <h2>Interests</h2>
+                    <div class="top"><i class="fa-solid fa-tablet-screen-button"></i><span>App Development</span></div>
+                    <div class="mid"><i class="fa-solid fa-laptop-code"></i><span>Web Development</span></div>
+                    <div class="bottom"><i class="fa-solid fa-desktop"></i><span>Game Development</span></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="items">
+                    <div class="item item1"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+                    <div class="item item2"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+                    <div class="item item3"><i class="fa-brands fa-square-js"></i>JavaScript</div>
+                    <div class="item item4"><i class="fa-solid fa-c"></i>C++</div>
+                    <div class="item item5"><i class="fa-brands fa-java"></i>Java</div>
+                    <div class="item item6"><i class="fa-solid fa-database"></i>SQL</div>
+                    <div class="item item7"><i class="fa-brands fa-k"></i>Kotlin</div>
+                </div>
+            </div>
+        </section>
+        
+        <!--SECTION PROJECTS-->
+        <div class="projects">
+        <section id="projects" class="projects-section">
+            <h1>Projects</h1>
+            <p class="text">The projects i made were for university exams or for personal growth and practicing!</p>
+            <div class="container">
+                <div class="p-left">
+                    <h2>Mp3 player</h2>
+                    <p>The mp3 player project is a fully functional music listening environment in which the user can browse through all the songs he has added to the application. The mp3 features are browsing between songs, pausing and continuing the song, as well as live lyrics (the user must add the file). Also, for each song the name of the artist and the song is displayed. The UI is simple and very easy to use it!</p>
+                    <div class="left-des">
+                        <span>Java</span>
+                        <span>JavaFx</span>
+                        <span>Scene Builder</span>
+                    </div>    
+                </div>
+                <div class="p-center">
+                    <h2>Rent app</h2>
+                    <p>The application I created is for renting houses, cars, boats or even jets. The user can browse through the various available ads and, depending on his wishes, rent a service within the time available. The total cost is calculated dynamically depending on the cost of the service. When the user makes a reservation for a service, a confirmation email is sent to the corresponding account they have provided. Each user has their own account whose data is stored in a remote firestore database and authentication is required for their connection. The ability to change the connection password is also provided.</p>
+                    <div class="center-des">
+                        <span>Java</span>
+                        <span>Kotlin</span>
+                        <span>Android Studio</span>
+                    </div>
+                </div>
+                <div class="p-right">
+                    <h2>Simple e-shop</h2>
+                    <p>The e-shop I created is a very simple project. There are some categories for the user to browse and when they select one of them, there are corresponding products in each of them, with a brief description of the product as well as its price. Whatever the user chooses is collected in his cart and he can make his purchase.</p>
+                    <div class="right-des">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <h1>Links coming soon!</h1>
+                <p class="text"><span>🚧</span> Under Construction <span>🚧</span></p>
+            </div>
+        </section>
+        </div>
+        <!--SECTION PROJECTS-->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="box1">
+                    <form id="contactForm">
+                        <div class="info">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="ex. Nikos" required="true">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="ex. Papadopoulos" required="true">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="true">
+                        </div>
+                        <div class="textarea">
+                            <br>
+                            <p>What do you have in mind?</p>
+                            <textarea name="textarea" id="text" placeholder="Your message..."></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="box2">
+                    <div class="text">
+                        <h1>Contact Me</h1>
+                        <p>I’m always open to new opportunities, collaborations, or simply a friendly conversation. Whether you’d like to discuss a potential project, ask a question, or just connect, I’d be happy to hear from you.For a quick and easy way to get in touch, you can use the contact form. Just leave your details and message, and I’ll get back to you as soon as possible.</p>
+                        <br>
+                        <div class="info">
+                            <div class="phone"><i class="fa-solid fa-phone"></i><p>+30-698-6821058</p></div>
+                            <div class="email"><i class="fa-solid fa-envelope"></i><p>elias.sarigiannidis@gmail.com</p></div>
+                        </div>
+                        <br>
+                        <h2>Want to contact via social media?</h2>
+                        <p>I regularly check all platforms, so feel free to choose the one that’s most convenient for you!</p>
+                        
+                        <div class="links">
+                            <a id="ig" href="https://www.instagram.com/_sarigiannidiss/" target="_blank"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                            <a id="in" href="https://www.linkedin.com/in/%CE%B7%CE%BB%CE%AF%CE%B1%CF%82-%CF%83%CE%B1%CF%81%CE%B7%CE%B3%CE%B9%CE%B1%CE%BD%CE%BD%CE%AF%CE%B4%CE%B7%CF%82-b275482a6/" target="_blank"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
+                            <a id="fb" href="https://www.facebook.com/profile.php?id=100017089577989&locale=el_GR" target="_blank"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      ...
+  </form>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Script -->
+  <script>
+    (function(){
+      emailjs.init("VFv3vtojnYknJOt8W"); // public key
+    })();
+
+    const form = document.getElementById("contactForm");
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      emailjs.sendForm("service_qbl6mow", "template_8532cnu", this)
+        .then(() => {
+          alert("Το μήνυμα στάλθηκε επιτυχώς — ευχαριστούμε!");
+          form.reset();
+        }, (error) => {
+          console.error("EmailJS error:", error);
+          alert("Σφάλμα κατά την αποστολή. Δες το console log.");
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Submit";
+        });
+    });
+  </script>
+</body>
+</html>
+
+
+</body>
+</html>
