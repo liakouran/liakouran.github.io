@@ -41,6 +41,7 @@ body {
 .nav .left h2{
   font-size: 50px;
   font-weight: 600;
+  color: var(--background-color);
 }
 
 .nav a{
@@ -1367,3 +1368,4 @@ body {
   }
 
 }
+
