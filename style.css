@@ -32,8 +32,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 50px 150px;
-  background-color: var(--background-color);
+  background: transparent;
+  backdrop-filter: blur(10px);
   z-index: 9999;
+  border-bottom: 1px solid #414345;
 }
 
 .nav .left h2{
@@ -1363,4 +1365,5 @@ body {
   to {
     text-shadow: 0 -5px 10px rgba(255, 170, 0, 0.6),0 -10px 20px rgba(255, 174, 0, 0.5),0 -15px 30px rgba(255, 115, 0, 0.4);
   }
+
 }
