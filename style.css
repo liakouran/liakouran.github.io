@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 50px 150px;
-  background: transparent;
+  background: #41434573;
   backdrop-filter: blur(10px);
   z-index: 9999;
   border-bottom: 1px solid #414345;
@@ -41,7 +41,6 @@ body {
 .nav .left h2{
   font-size: 50px;
   font-weight: 600;
-  color: var(--background-color);
 }
 
 .nav a{
@@ -1368,4 +1367,5 @@ body {
   }
 
 }
+
 
