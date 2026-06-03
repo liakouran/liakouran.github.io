@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ilias Sarigiannidis, an IT engineering student focused on Data Science, Machine Learning and Software Development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="portfolio-style.css">
+    <title>Ilias Sarigiannidis | Software Engineer Portfolio</title>
+</head>
+<body id="home">
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Go to home">
+                <span class="brand-mark">IS</span>
+                <span>Ilias Sarigiannidis</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section section-shell" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Junior Software Engineer / Data Science Enthusiast</p>
+                <h1 id="hero-title">Ilias Sarigiannidis</h1>
+                <p class="hero-intro">Hi, I'm Ilias. I'm an IT engineering student interested in Data Science, Machine Learning and Software Development. I enjoy building practical applications and exploring how data can be transformed into useful insights.</p>
+
+                <div class="hero-actions" aria-label="Hero actions">
+                    <a class="button button-primary" href="#projects">
+                        <span>View Projects</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a class="button button-secondary" href="#contact">
+                        <span>Contact Me</span>
+                    </a>
+                    <a class="button button-ghost" href="resume_image.jpg" target="_blank" rel="noopener" download>
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-media" aria-label="Portrait of Ilias Sarigiannidis">
+                <img src="hlias.webp" alt="Ilias Sarigiannidis portrait">
+                <div class="availability-note">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span>Open to junior software and data-focused opportunities</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-shell" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="eyebrow">About Me</p>
+                <h2 id="about-title">Building practical software while growing into data-driven engineering.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>I am an Information and Electronic Systems Engineering student at the International Hellenic University. My main focus is learning how to design useful software, understand real user needs, and apply data science techniques to make better decisions.</p>
+                    <p>What motivates me professionally is the process of turning an unclear problem into a working solution. I like projects that combine structured thinking, clean interfaces and measurable outcomes.</p>
+                </div>
+
+                <div class="interest-list" aria-label="Core interests">
+                    <article class="interest-card">
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        <h3>Data Science</h3>
+                        <p>Exploring datasets, patterns and insights with Python-based tools.</p>
+                    </article>
+                    <article class="interest-card">
+                        <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                        <h3>Machine Learning</h3>
+                        <p>Learning how models can support predictions and automation.</p>
+                    </article>
+                    <article class="interest-card">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <h3>Software Development</h3>
+                        <p>Creating web, mobile and application projects with clear workflows.</p>
+                    </article>
+                    <article class="interest-card">
+                        <i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>
+                        <h3>Problem Solving</h3>
+                        <p>Breaking larger challenges into small, testable steps.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-shell" aria-labelledby="projects-title">
+            <div class="section-heading projects-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2 id="projects-title">Projects with clear purpose, practical features and room to grow.</h2>
+                <p>These projects were created for university exams, practice and personal growth. The focus is on what each project solves and what was learned while building it.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card project-card-featured">
+                    <div class="project-preview rent-preview" aria-label="Rent app preview">
+                        <div class="preview-window">
+                            <div class="preview-topbar"><span></span><span></span><span></span></div>
+                            <div class="rent-layout">
+                                <div class="rent-map"></div>
+                                <div class="rent-panel">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-label">Featured Project</span>
+                        <h3>Rent App</h3>
+                        <p>A mobile rental application for browsing houses, cars, boats and jets, calculating reservation cost dynamically and managing user accounts with authentication.</p>
+                        <p class="project-problem"><strong>Problem solved:</strong> Makes the rental flow easier by combining listing discovery, reservation details, account access and confirmation in one app experience.</p>
+                        <div class="tag-list" aria-label="Rent app technologies">
+                            <span>Kotlin</span>
+                            <span>Java</span>
+                            <span>Android Studio</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-actions">
+                            <span class="text-link disabled-link">GitHub soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview barber-preview" aria-label="Barbershop website preview">
+                        <div class="preview-window">
+                            <div class="preview-topbar"><span></span><span></span><span></span></div>
+                            <div class="barber-layout">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Barbershop Website</h3>
+                        <p>A responsive website for a barbershop with a polished landing experience, service presentation and a direct live demo.</p>
+                        <p class="project-problem"><strong>Problem solved:</strong> Gives a local business a clean digital presence that is simple to scan and easy to access from mobile.</p>
+                        <div class="tag-list" aria-label="Barbershop technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="text-link" href="https://barbershop-website-taupe.vercel.app?_vercel_share=5X8lAiSWRpNSB5AftfTf2Qiv1qGFNziw" target="_blank" rel="noopener">Live Demo</a>
+                            <span class="text-link disabled-link">GitHub soon</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview shop-preview" aria-label="Simple e-shop preview">
+                        <div class="preview-window">
+                            <div class="preview-topbar"><span></span><span></span><span></span></div>
+                            <div class="shop-layout">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Simple E-Shop</h3>
+                        <p>A small e-commerce project with product categories, item descriptions, prices and a basic cart flow.</p>
+                        <p class="project-problem"><strong>Problem solved:</strong> Demonstrates how browsing, product selection and cart state can work together in a simple shopping interface.</p>
+                        <div class="tag-list" aria-label="E-shop technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <span class="text-link disabled-link">GitHub soon</span>
+                            <span class="text-link disabled-link">Live demo soon</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section section-shell" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="eyebrow">Skills</p>
+                <h2 id="skills-title">A focused toolkit for software projects and data exploration.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="tag-list">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                        <span>SQL</span>
+                    </div>
+                </article>
+                <article class="skill-group">
+                    <h3>Data Science &amp; ML</h3>
+                    <div class="tag-list">
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                    </div>
+                </article>
+                <article class="skill-group">
+                    <h3>Web Development</h3>
+                    <div class="tag-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                </article>
+                <article class="skill-group">
+                    <h3>Tools</h3>
+                    <div class="tag-list">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Linux</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="learning-section section-shell" aria-labelledby="learning-title">
+            <div class="section-heading compact-heading">
+                <p class="eyebrow">Now Learning</p>
+                <h2 id="learning-title">What I'm Currently Learning</h2>
+            </div>
+
+            <div class="learning-list">
+                <span>Deep Learning</span>
+                <span>LLM Applications</span>
+                <span>MLOps</span>
+                <span>Cloud Technologies</span>
+            </div>
+        </section>
+
+        <section class="timeline-section section-shell" aria-labelledby="timeline-title">
+            <div class="section-heading">
+                <p class="eyebrow">Timeline</p>
+                <h2 id="timeline-title">Studies, milestones and project direction.</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="timeline-date">2022 - Present</span>
+                    <h3>International Hellenic University</h3>
+                    <p>Studying Information and Electronic Systems Engineering with a growing focus on software development and data-oriented thinking.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2024</span>
+                    <h3>Android Rental Application</h3>
+                    <p>Built a mobile app concept with authentication, reservation flow, dynamic cost calculation and remote database storage.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2025</span>
+                    <h3>Web Portfolio and Client-Style Projects</h3>
+                    <p>Created responsive web projects, including a barbershop website and a simple e-shop, to practice UI structure and front-end logic.</p>
+                </article>
+                <article class="timeline-item">
+                    <span class="timeline-date">2026</span>
+                    <h3>Data Science and ML Direction</h3>
+                    <p>Expanding into Python, Pandas, NumPy, machine learning fundamentals and the practical use of data in applications.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-shell" aria-labelledby="contact-title">
+            <div class="contact-copy">
+                <p class="eyebrow">Contact</p>
+                <h2 id="contact-title">Let's connect.</h2>
+                <p>I am open to junior opportunities, collaborations and conversations around software, data and practical project ideas.</p>
+
+                <div class="contact-links" aria-label="Contact links">
+                    <a href="mailto:elias.sarigiannidis@gmail.com">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span>elias.sarigiannidis@gmail.com</span>
+                    </a>
+                    <a href="tel:+306986821058">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>+30 698 6821058</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/%CE%B7%CE%BB%CE%AF%CE%B1%CF%82-%CF%83%CE%B1%CF%81%CE%B7%CE%B3%CE%B9%CE%B1%CE%BD%CE%BD%CE%AF%CE%B4%CE%B7%CF%82-b275482a6/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Nikos" required>
+                </div>
+                <div class="form-row">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Papadopoulos" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="text">Message</label>
+                    <textarea name="textarea" id="text" placeholder="Your message..." required></textarea>
+                </div>
+                <button class="button button-primary" type="submit">
+                    <span>Submit</span>
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Ilias Sarigiannidis. All rights reserved.</p>
+            <div class="footer-links">
+                <span>GitHub soon</span>
+                <a href="https://www.linkedin.com/in/%CE%B7%CE%BB%CE%AF%CE%B1%CF%82-%CF%83%CE%B1%CF%81%CE%B7%CE%B3%CE%B9%CE%B1%CE%BD%CE%BD%CE%AF%CE%B4%CE%B7%CF%82-b275482a6/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:elias.sarigiannidis@gmail.com">Email</a>
+                <a href="https://www.instagram.com/_sarigiannidiss/" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            if (window.emailjs) {
+                emailjs.init("Tsiy2kxFewvSn1T5N");
+            }
+        })();
+
+        const form = document.getElementById("contactForm");
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!window.emailjs) {
+                alert("Email service is not available right now. Please contact me by email instead.");
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.querySelector("span").textContent = "Sending...";
+
+            emailjs.sendForm("service_qbl6mow", "template_8532cnu", this)
+                .then(() => {
+                    alert("Your message was sent successfully. Thank you!");
+                    form.reset();
+                }, (error) => {
+                    console.error("EmailJS error:", error);
+                    alert("There was an error while sending your message. Please try again or use email directly.");
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.querySelector("span").textContent = "Submit";
+                });
+        });
+    </script>
+</body>
+</html>
