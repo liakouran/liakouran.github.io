@@ -794,6 +794,16 @@ textarea {
     color: var(--accent);
 }
 
+@media (max-width: 1200px) {
+    .hero-section {
+        gap: 64px;
+    }
+
+    .about-grid {
+        gap: 48px;
+    }
+}
+
 @media (max-width: 980px) {
     .hero-section,
     .about-grid,
@@ -819,27 +829,46 @@ textarea {
 }
 
 @media (max-width: 760px) {
+
     .site-header {
-        position: static;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+
+        background: rgba(10, 10, 10, 0.75);
     }
 
     .nav {
         min-height: auto;
         padding: 16px 0;
+
         align-items: flex-start;
         flex-direction: column;
+
+        gap: 16px;
     }
 
     .nav-links {
+        display: flex;
+        gap: 12px;
+
         width: 100%;
         overflow-x: auto;
+
         padding-bottom: 4px;
+
+        scrollbar-width: none;
     }
 
-    .section-shell,
-    .projects-section {
-        width: min(100% - 24px, var(--max-width));
-        padding: 64px 0;
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
     }
 
     .hero-section {
@@ -847,8 +876,8 @@ textarea {
     }
 
     .hero-actions {
-        align-items: stretch;
         flex-direction: column;
+        align-items: stretch;
     }
 
     .button {
@@ -857,15 +886,14 @@ textarea {
 
     .interest-list,
     .project-grid,
-    .learning-list,
-    .skills-grid {
+    .learning-list {
         grid-template-columns: 1fr;
     }
 
-    .project-card-featured .project-preview,
-    .project-preview {
-        min-height: 250px;
+    .project-preview,
+    .project-card-featured .project-preview {
         padding: 18px;
+        min-height: auto;
     }
 
     .rent-layout,
@@ -876,16 +904,27 @@ textarea {
 
     .footer-inner {
         flex-direction: column;
+        gap: 16px;
+    }
+
+    .project-card,
+    .project-card-featured,
+    .skill-group,
+    .interest-card {
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 520px) {
+
     .brand span:last-child {
         white-space: normal;
-    }
-
-    .hero-copy h1 {
-        font-size: 2.8rem;
     }
 
     .availability-note {
@@ -904,4 +943,15 @@ textarea {
     .contact-links a {
         width: 100%;
     }
+}
+
+.project-card,
+.project-card-featured,
+.skill-group,
+.interest-card,
+.button {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
